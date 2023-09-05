@@ -1,7 +1,14 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
+// import { MainNavItem } from "types"
+// import { NavbarConfig } from "@/config/navbar"
 
-export default function Navbar() {
+interface MainNavProps {
+    items?: string
+    children?: React.ReactNode
+}
+export default function Navbar({ items, children }: MainNavProps) {
     const logo = "/rdm_logo.png"
 
     return (
@@ -35,6 +42,17 @@ export default function Navbar() {
                         <div className="flex flex-col text-gray-600 capitalize dark:text-gray-300 lg:flex lg:px-16 lg:-mx-4 lg:flex-row lg:items-center">
 
                             <a href="/" className="mt-2 transition-colors duration-300 transform lg:mt-0 lg:mx-4 hover:text-gray-900 dark:hover:text-gray-200">Home</a>
+                            <nav className="hidden gap-6 md:flex">
+                                {/* {items?.map((item, index) => (
+                                    <Link
+                                        key={index}
+                                        href={item.disabled ? "#" : item.href}
+
+                                    >
+                                        {item.title}
+                                    </Link>
+                                ))} */}
+                            </nav>
                         </div>
 
                         <div className="flex justify-center mt-6 lg:flex lg:mt-0 lg:-mx-2">
