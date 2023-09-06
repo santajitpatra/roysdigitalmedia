@@ -4,20 +4,28 @@ import { NavbarConfig } from "../types";
 export const navbarConfig: NavbarConfig = {
   mainNav: [
     {
-      title: "Features",
-      href: "/#features",
+      title: "Home",
+      href: "/",
     },
     {
-      title: "Pricing",
-      href: "/pricing",
+      title: "About",
+      href: "/about",
+    },
+    {
+      title: "Services",
+      href: "/services",
+    },
+    {
+      title: "Careers",
+      href: "/careers",
+    },
+    {
+      title: "Contact",
+      href: "/contact",
     },
     {
       title: "Blog",
       href: "/blog",
-    },
-    {
-      title: "Documentation",
-      href: "/docs",
     },
   ],
 };
