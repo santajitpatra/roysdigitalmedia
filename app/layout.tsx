@@ -18,7 +18,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navbar />
+        <Navbar/>
+        <div className='h-[4.9rem]'></div>
         {children}
         <Footer/>
       </body>

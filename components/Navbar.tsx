@@ -35,21 +35,21 @@ const menuItems = [
 ]
 
 // no need interface specific
-interface menuItems {
-    title: string;
-    href: string;
-}
+// interface menuItems {
+//     title: string;
+//     href: string;
+// }
 
-interface MenuProps {
-    items: menuItems[];
-}
+// interface MenuProps {
+//     items: menuItems[];
+// }
 
 
-const Navbar: React.FC<MenuProps> = ({ items }) => {
+const Navbar = () => {
     const [showMobileMenu, setShowMobileMenu] = React.useState<boolean>(false)
 
     return (
-        <div className=" shadow bg-gray-900">
+        <div className="fixed w-full shadow bg-gray-900">
             <div className="container px-6 py-4 mx-auto">
                 <div className="lg:flex lg:items-center">
                     <div className="flex items-center justify-between">
@@ -113,7 +113,7 @@ const Navbar: React.FC<MenuProps> = ({ items }) => {
 
                                 <Link
                                     href="/login"
-                                    className="w-full px-6 py-2.5 text-sm font-medium tracking-wider text-white transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-gray-800 rounded-lg hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80"                                >
+                                    className=" px-6 py-2.5 text-sm font-medium tracking-wider text-white transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-gray-800 rounded-lg hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80"                                >
                                     Inquire now!
                                 </Link>
 
