@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function NotFound() {
     return (
         <div className=' bg-gray-200 flex justify-center items-center max-w-full'>
-            <div className='space-y-4 p-6 my-10 lg:my-16 xl:my-64'> <h2 className='text-2xl'>We couldn&apos;t find the page you were looking for. This is either because:
+            <div className='space-y-4 p-6 my-10 lg:my-16 xl:my-60'> <h2 className='text-2xl'>We couldn&apos;t find the page you were looking for. This is either because:
             </h2>
 
                 <li>There is an error in the URL entered into your web browser. Please check the URL and try again.

@@ -2,9 +2,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
-import { FaFacebookF, FaLinkedinIn, FaInstagram, FaTiktok } from "react-icons/fa";
 import { HiOutlineMenuAlt4, HiX } from "react-icons/hi";
 import MobileNav from './MobileNav';
+import SocialIcon from './Social-Icon';
 
 
 const menuItems = [
@@ -49,17 +49,17 @@ const Navbar = () => {
     const [showMobileMenu, setShowMobileMenu] = React.useState<boolean>(false)
 
     return (
-        <div className="fixed w-full shadow bg-gray-900">
+        <div className="fixed w-full shadow bg-gray-900 h-20">
             <div className="container px-6 py-4 mx-auto">
                 <div className="lg:flex lg:items-center">
                     <div className="flex items-center justify-between">
-                        <a href="/">
+                        <Link href="/">
                             <Image width={100}
                                 height={50}
                                 alt="Picture of the author"
                                 className='-my-2 xl:mr-32'
                                 src={"/rdm_logo.png"} />
-                        </a>
+                        </Link>
 
                         {/* <!-- Mobile menu button --> */}
                         <div className="flex lg:hidden"
@@ -88,35 +88,15 @@ const Navbar = () => {
                                     {item.title}
                                 </Link>
                             ))}
-                            <div className="flex justify-center lg:mt-0 lg:mx-2  ">
-
-                                <a href="https://www.instagram.com/roysdigitalmedia" target="_blank" rel="noopener noreferrer" className="mx-2 transition-colors duration-300 transform text-gray-300 hover:text-gray-300" >
-                                    <FaInstagram />
-
-                                </a>
-                                <a href="https://www.facebook.com/RoysDigitalMedia" target="_blank" rel="noopener noreferrer" className="mx-2 transition-colors duration-300 transform text-gray-300 hover:text-gray-300" >
-                                    <FaFacebookF />
-
-                                </a>
-                                <a href="https://www.linkedin.com/company/roys-digital-media/about" target="_blank" rel="noopener noreferrer" className="mx-2 transition-colors duration-300 transform text-gray-300 hover:text-gray-300" >
-
-                                    <FaLinkedinIn />
-                                </a>
-                                <a href="https://www.tiktok.com/@roysdigitalmedia" target="_blank" rel="noopener noreferrer" className="mx-2 transition-colors duration-300 transform text-gray-300 hover:text-gray-300" >
-
-                                    <FaTiktok />
-                                </a>
-
-                            </div>
+                            <SocialIcon/>
 
                             <div className="flex justify-center mt-0 xl:-mr-10 w-52 ">
 
                                 <Link
-                                    href="/login"
+                                    href="/contact"
                                     className=" px-6 py-2.5 text-sm font-medium tracking-wider text-white transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-gray-800 rounded-lg hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80"                                >
                                     Inquire now!
                                 </Link>
-
                             </div>
                         </div>
 

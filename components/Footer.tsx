@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react'
-import { FaFacebookF, FaLinkedinIn, FaInstagram, FaTiktok } from "react-icons/fa";
+import SocialIcon from './Social-Icon';
 
 
 export default function Footer() {
@@ -8,40 +8,48 @@ export default function Footer() {
     return (
         <footer className="bg-gray-900">
             <div className="container px-6 py-12 mx-auto">
+               
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
                     {/* 1st column */}
+                   
                     <div>
-                        <p className="font-semibold text-white">
-                            Quick Link
+                        <p className="text-lg text-white">
+                            Contact Us
                         </p>
                         <div className="flex flex-col items-start mt-5 space-y-2">
                             <a
-                                href="#"
+                                href="mailto:emma@roysdigitalmedia.com?subject=Inquiry"
                                 className=" transition-colors duration-300 text-gray-300 hover:underline hover:text-blue-500"
                             >
-                                Home
+                                emma@roysdigitalmedia.com
                             </a>
-                            
+                            <a
+                                href="tel:8323160798"
+                                className=" transition-colors duration-300 text-gray-300 hover:underline hover:text-blue-500"
+                            >
+                                832.316.0798
+                            </a>
                         </div>
                     </div>
                     <div>
-                        <p className="font-semibold  text-white">
-                            Industries
+                        <p className="text-lg  text-white">
+                            Office Location
                         </p>
                         <div className="flex flex-col items-start mt-5 space-y-2">
                             <a
                                 href="#"
                                 className=" transition-colors duration-300 text-gray-300  hover:underline hover:text-blue-500"
                             >
-                                Retail &amp; E-Commerce
-                            </a> 
+                                1334 Brittmoore Road<br />
+                                Houston, TX 77043
+                            </a>
                         </div>
                     </div>
-                    <div className="sm:col-span-2">
-                        <h1 className="max-w-lg text-xl font-semibold tracking-tight  xl:text-2xl text-white">
+                    <div className="sm:col-span-2 lg:px-10">
+                        <h1 className="max-w-lg text-4xl  tracking-tight  xl:text-2xl text-white pb-6">
                             The Roys Review
                         </h1>
-                        <p className='text-white'>Join our monthly newsletter to get the inside scoop on all things marketing & social media!
+                        <p className='text-white '>Join our monthly newsletter to get the inside scoop on all things marketing & social media!
                         </p>
                         <div className="flex flex-col mx-auto mt-6 space-y-3 md:space-y-0 md:flex-row">
                             <input
@@ -68,22 +76,7 @@ export default function Footer() {
                         />
                     </a>
                     <div className="flex -mx-2">
-                        <a href="https://www.instagram.com/roysdigitalmedia" target="_blank" rel="noopener noreferrer" className="mx-2 transition-colors duration-300 transform text-gray-300 hover:text-gray-300" >
-                            <FaInstagram />
-
-                        </a>
-                        <a href="https://www.facebook.com/RoysDigitalMedia" target="_blank" rel="noopener noreferrer" className="mx-2 transition-colors duration-300 transform text-gray-300 hover:text-gray-300" >
-                            <FaFacebookF />
-
-                        </a>
-                        <a href="https://www.linkedin.com/company/roys-digital-media/about" target="_blank" rel="noopener noreferrer" className="mx-2 transition-colors duration-300 transform text-gray-300 hover:text-gray-300" >
-
-                            <FaLinkedinIn />
-                        </a>
-                        <a href="https://www.tiktok.com/@roysdigitalmedia" target="_blank" rel="noopener noreferrer" className="mx-2 transition-colors duration-300 transform text-gray-300 hover:text-gray-300" >
-
-                            <FaTiktok />
-                        </a>
+                        <SocialIcon />
                     </div>
                 </div>
             </div>
