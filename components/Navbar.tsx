@@ -49,7 +49,7 @@ const Navbar = () => {
     const [showMobileMenu, setShowMobileMenu] = React.useState<boolean>(false)
 
     return (
-        <div className="fixed w-full shadow bg-gray-900 h-20">
+        <div className="sticky top-0 z-50 w-full shadow bg-gray-900 h-20">
             <div className="container px-6 py-4 mx-auto">
                 <div className="lg:flex lg:items-center">
                     <div className="flex items-center justify-between">
