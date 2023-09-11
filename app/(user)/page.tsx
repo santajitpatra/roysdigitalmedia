@@ -1,9 +1,10 @@
+import HeroSection from "@/components/HeroSection";
 import SwiperSlider from "@/components/SwiperSlider";
 
 export default function Home() {
   return (
-    <main className="bg-[#FBCEB1]">
-      Home   
+    <main>
+      <HeroSection/>   
       <SwiperSlider/>
        </main>
   )
