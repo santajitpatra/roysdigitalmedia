@@ -3,11 +3,9 @@ import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import "swiper/css/pagination";
 import {
     Autoplay,
     Navigation,
-    Pagination,
 } from "swiper/modules";
 import Image from "next/image";
 import { useSwiper } from 'swiper/react';
@@ -62,16 +60,15 @@ const SwiperSlider = () => {
         <div className="relative group">
             <Swiper
                 // navigation={true}
+            
                 spaceBetween={30}
                 centeredSlides={true}
                 autoplay={{
-                    delay: 2000,
+                    delay: 3500,
                     disableOnInteraction: false,
                 }}
-                pagination={{
-                    clickable: true,
-                }}
-                modules={[Autoplay, Pagination, Navigation]}
+
+                modules={[Autoplay, Navigation]}
                 className="mySwiper"
             >
                 {sliderDB.map((slider, i) => (
@@ -87,7 +84,7 @@ const SwiperSlider = () => {
                     </SwiperSlide>
                 ))}
             </Swiper>
-            <div className="custom-next-button hidden group-hover:block absolute -translate-y-1/2 cursor-pointer top-1/2 right-5 bg-black/20 text-white p-2 rounded-full text-2xl" onClick={() => swiper.slideNext()}>
+            <div className="custom-next-button  hidden group-hover:block absolute -translate-y-1/2 cursor-pointer top-1/2 right-5 bg-black/20 text-white p-2 rounded-full text-2xl" onClick={() => swiper.slideNext()}>
 
                 <BsChevronCompactRight />
 
@@ -95,7 +92,7 @@ const SwiperSlider = () => {
             {/* <button onClick={() => swiper.slideNext()}>                    <BsChevronCompactRight />
             </button> */}
 
-            <div className="custom-prev-button hidden group-hover:block absolute -translate-y-1/2 cursor-pointer top-1/2 left-5 bg-black/20 text-white p-2 rounded-full text-2xl" onClick={() => swiper.slidePrev()}>
+            <div className="custom-prev-button  hidden group-hover:block absolute -translate-y-1/2 cursor-pointer top-1/2 left-5 bg-black/20 text-white p-2 rounded-full text-2xl" onClick={() => swiper.slidePrev()}>
 
                 <BsChevronCompactLeft />
 
