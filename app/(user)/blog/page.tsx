@@ -1,7 +1,16 @@
+import BlogList from '@/components/BlogList';
+import { client } from '@/sanity/lib/client';
+import { groq } from 'next-sanity'
 import React from 'react'
 
-export default function Blog() {
+
+const query =groq`*[_type=='post']`;
+
+export default async function Blog() {
+
+  const posts = await client.fetch(query)
+console.log(posts)
   return (
-    <div>blog</div>
+    <div><BlogList posts={posts}/></div>
   )
 }

@@ -4,8 +4,9 @@ import InstaMedia from "@/components/InstaMedia";
 import Jumbotron from "@/components/Jumbotron";
 import ServicesHome from "@/components/ServicesHome";
 import SwiperSlider from "@/components/SwiperSlider";
-
 export default function Home() {
+  
+
   return (
     <main>
       <Jumbotron/>
