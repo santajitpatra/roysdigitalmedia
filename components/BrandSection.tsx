@@ -1,4 +1,6 @@
+import Image from 'next/image'
 import React from 'react'
+import Marquee from 'react-fast-marquee'
 
 const brandName = [
     {
@@ -319,11 +321,20 @@ const brandName = [
 ]
 const BrandSection = () => {
     return (
-            <div className=''>{brandName.map((brand, i) => (
-                <div key={i} className='bg-slate-200 rounded-lg  mb-10 flex'>
-                    <img src={brand.brandicon} alt="brand" className=' justify-start w-1/4 h-1/5' />
-                    <a href={brand.href} className=''> Click Here</a>
-                </div>))}</div>
+            <div className='bg-slate-200'>
+            <Marquee speed={200} >
+                {brandName.map((brand, i) => (
+                    <div key={i} className='bg-gray-100 rounded-lg  my-10 mr-10 '>
+                        <Image src={brand.brandicon} width={400} height={200} alt="brand" className='' />
+                    </div>))}
+            </Marquee>
+            <Marquee speed={200} direction={"right"}>
+                {brandName.map((brand, i) => (
+                    <div key={i} className='bg-gray-100 rounded-lg  my-10 mr-10 '>
+                        <Image src={brand.brandicon} width={400} height={200} alt="brand" className='' />
+                    </div>))}
+            </Marquee>
+               </div>
     )
 }
 
