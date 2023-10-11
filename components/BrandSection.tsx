@@ -321,21 +321,25 @@ const brandName = [
 ]
 const BrandSection = () => {
     return (
-            <div className='bg-slate-200'>
+        <div className='bg-slate-200'>
             <Marquee speed={200} >
                 {brandName.map((brand, i) => (
-                    <div key={i} className='bg-gray-100 rounded-lg  my-10 mr-10 '>
-                        <Image src={brand.brandicon} width={400} height={200} alt="brand" className='' />
+                    <div key={i} className='grid items-center' style={{
+                        backgroundPosition: "50%",
+                        width: "clamp(10rem, 1rem + 40vmin, 30rem)",
+                        padding: "calc(clamp(10rem, 1rem + 30vmin, 30rem) / 10)"
+                    }}>
+                        <Image src={brand.brandicon} width={400} height={200} alt="brand" className='object-contain rounded-lg aspect-video py-1 px-5  shadow-md bg-slate-50' />
                     </div>))}
             </Marquee>
-            <Marquee speed={200} direction={"right"}>
+            {/* <Marquee speed={200} direction={"right"}>
                 {brandName.map((brand, i) => (
                     <div key={i} className='bg-gray-100 rounded-lg  my-10 mr-10 '>
                         <Image src={brand.brandicon} width={400} height={200} alt="brand" className='' />
                     </div>))}
-            </Marquee>
-               </div>
+            </Marquee> */}
+        </div>
     )
 }
 
-export default BrandSection
+export default BrandSection;
