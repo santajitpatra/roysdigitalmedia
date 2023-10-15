@@ -1,8 +1,11 @@
-import ContactDetails from '@/components/ContactDetalis'
+import ContactForm from '@/components/ContactForm'
 import React from 'react'
 
 export default function Contact() {
   return (
-    <div><ContactDetails/></div>
+    <div className='bg-[#FBCEB1]'>
+      <ContactForm/>
+  
+    </div>
   )
 }
