@@ -9,6 +9,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: {
+          light: "#dfe0e1",
+          DEFAULT: "#fbceb1",
+        
+          dark: "#1c1c1e",
+        },
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

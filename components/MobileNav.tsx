@@ -33,7 +33,7 @@ const menuItems = [
 export default function MobileNav() {
 
   return (
-    <div className="absolute inset-x-0 z-20 flex-1 w-full px-6 py-4 mt-4 transition-all duration-300 ease-in-out bg-gray-900 h-screen">
+    <div className="absolute inset-x-0 z-20 flex-1 w-full px-6 py-4 mt-4 transition-all duration-300 ease-in-out bg-primary-dark h-screen">
       <div className="flex flex-col capitalize text-gray-300 ">
 
         {menuItems?.map((item, index) => (

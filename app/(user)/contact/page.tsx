@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Contact() {
   return (
-    <div className='bg-[#FBCEB1]'>
+    <div className='bg-primary'>
       <ContactForm/>
   
     </div>
