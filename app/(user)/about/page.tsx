@@ -1,7 +1,12 @@
+import TeamSection from '@/components/TeamSection'
 import React from 'react'
 
 export default function About() {
   return (
-    <div className='bg-primary'>about</div>
+    <div><div className='bg-primary'>
+      hero
+    </div>
+      <TeamSection />
+    </div>
   )
 }

@@ -34,16 +34,6 @@ const menuItems = [
     },
 ]
 
-// no need interface specific
-// interface menuItems {
-//     title: string;
-//     href: string;
-// }
-
-// interface MenuProps {
-//     items: menuItems[];
-// }
-
 
 const Navbar = () => {
     const [showMobileMenu, setShowMobileMenu] = React.useState<boolean>(false)
@@ -65,7 +55,7 @@ const Navbar = () => {
                         <div className="flex lg:hidden"
                             onClick={() => setShowMobileMenu(!showMobileMenu)}
                         >
-                            <div className="text-gray-200 hover:text-gray-400 focus:outline-none focus:text-gray-400" aria-label="toggle menu">
+                            <div className="text-primary-text hover:text-primary-text_h focus:outline-none focus:text-gray-400" aria-label="toggle menu">
                                 {showMobileMenu ? <HiX size={30} />
                                     : <HiOutlineMenuAlt4 size={30} />}
                             </div>
@@ -77,24 +67,24 @@ const Navbar = () => {
 
                     <div className="relative inset-x-0 z-20 flex-1 mt-0 p-0 top-0  w-auto flex items-center justify-between">
                        
-                        <div className="hidden capitalize text-gray-300 lg:flex pl-20 xl:pl-72  flex-row lg:items-center">
+                        <div className="hidden capitalize text-primary-text lg:flex pl-20 xl:pl-72  flex-row lg:items-center">
 
                             {menuItems?.map((item, index) => (
                                 <Link
-                                    className="mt-0 lg:mx-4 hover:text-gray-200"
+                                    className="mt-0 lg:mx-4 hover:text-primary-text_h"
                                     key={index}
                                     href={item.href}
                                 >
                                     {item.title}
                                 </Link>
                             ))}
-                            <SocialIcon/>
+                            <SocialIcon size={15}/>
 
                             <div className="flex justify-center mt-0 xl:-mr-10 w-52 ">
 
                                 <Link
                                     href="/contact"
-                                    className=" px-6 py-2.5 text-sm font-medium tracking-wider text-white transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-gray-800 rounded-lg hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80"                                >
+                                    className=" px-6 py-2.5 text-sm font-medium tracking-wider text-primary-text transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-primary-dark_l rounded-lg hover:bg-primary-dark_lh focus:ring focus:ring-gray-300 focus:ring-opacity-80"                                >
                                     Inquire now!
                                 </Link>
                             </div>
