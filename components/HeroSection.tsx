@@ -20,7 +20,7 @@ const HeroSection = () => {
             </Link>
           </div>
           <div className='md:w-1/2'>
-            <img src="/images/StudioRendition-85.jpg" alt="" className='rounded-t-full'/>
+            <img src="/images/emma_about.jpg" alt="" className='rounded-t-full'/>
           </div>
         </div>
      

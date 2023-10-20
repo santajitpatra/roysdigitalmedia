@@ -34,3 +34,21 @@ export const careers = [
     ],
   },
 ];
+
+export const jobapplication = [
+  {
+    title: "How to apply",
+    descreption: "Please email emma@roysdigitalmedia.com the following",
+    category: [
+      "Resume (standard or creative resume)",
+      "Name and contact information",
+      "Education background",
+      "Brief overview of yourself",
+      "Position you are interested in",
+      "Why you want to work here",
+      "Why you believe you would make a good fit for the position",
+      "Any past relevant experience",
+      "A fun fact about yourself :)",
+    ],
+  },
+];
