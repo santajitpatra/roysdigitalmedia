@@ -1,7 +1,7 @@
 
 function MessageForm() {
   return (
-    <div className="mt-8 lg:w-1/2 lg:mx-6 ">
+    <div className="mt-8 md:w-1/2 md:mx-6 ">
       <div className="w-full px-8 py-10 mx-auto overflow-hidden shadow-2xl rounded-xl lg:max-w-xl bg-primary-light">
         <h1 className="text-2xl font-medium">Contact form</h1>
         <form

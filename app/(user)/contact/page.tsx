@@ -1,11 +1,14 @@
-import ContactForm from '@/components/ContactForm'
-import React from 'react'
+import ContactDetalis from "../../../components/ContactDetalis";
+import MessageForm from "../../../components/MessageForm";
+
 
 export default function Contact() {
   return (
     <div className='bg-primary'>
-      <ContactForm/>
-  
+      <div className='flex flex-col md:flex-row px-10 py-20'>
+        <ContactDetalis />
+        <MessageForm />
+      </div>
     </div>
   )
 }
