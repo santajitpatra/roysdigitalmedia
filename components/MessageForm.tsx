@@ -1,3 +1,4 @@
+import Button from "./ui/Button";
 
 function MessageForm() {
   return (
@@ -76,7 +77,7 @@ function MessageForm() {
               className="block w-full px-5 py-3 mt-2 border rounded-md focus:ring-opacity-40 focus:outline-none focus:ring text-black"
             />
           </div>
-          <div className="w-full mt-6">
+          <div className="w-full my-6">
             <label className="block mb-2 text-sm">Message</label>
             <textarea
               className="block w-full h-32 px-5 py-3 mt-2 rounded-md md:h-48 focus:ring-opacity-40 focus:outline-none focus:ring text-black"
@@ -86,9 +87,7 @@ function MessageForm() {
               name="message"
             />
           </div>
-          <button className="mt-6 rounded-full border-2 border-primary-dark px-4 py-2 xl:px-4 text-primary-dark transition-colors hover:bg-primary-dark_l hover:text-primary-text">
-            Submit
-          </button>
+          <Button name="Submit" /> 
         </form>
       </div>
     </div>
