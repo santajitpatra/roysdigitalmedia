@@ -1,4 +1,8 @@
-import Link from 'next/link'
+'use client'
+import * as Accordion from '@radix-ui/react-accordion';
+import { ChevronDownIcon } from '@radix-ui/react-icons';
+import { Container, Heading } from '@radix-ui/themes'
+import Button from './ui/Button';
 
 const servicesItems = [
   {
@@ -26,16 +30,41 @@ const servicesItems = [
 
 const ServicesHome = () => {
   return (
-    <div className="bg-[#FBCEB1] flex flex-col justify-center items-center"><h1>Services
-    </h1>
-      <div>
-        ko
-      </div>  <Link
-        href="/services"
-        className=" px-6 py-2.5 text-sm font-medium tracking-wider text-white transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-gray-900 rounded-lg hover:bg-gray-800 focus:ring focus:ring-gray-300 focus:ring-opacity-80"                                >
-        view details
-      </Link>
+    <Container size={"2"} className='w-full h-5/6 bg-primary px-5 py-10'>
+      <Heading size={"8"} weight={"regular"} align={"center"} mt={"9"} className='py-10' >Services</Heading>
+
+      {servicesItems.map((service, i) => (
+
+        <Accordion.Root key={i}
+          className="w-full border-b border-primary-dark"
+          type="single"
+          collapsible
+        // orientation="horizontal"
+        >
+          <Accordion.Item value="item-1" className=" overflow-hidden ">
+            <Accordion.Header className="flex">
+              <Accordion.Trigger className="flex flex-1 items-center justify-between py-4 font-medium text-xl transition-all [&[data-state=open]>svg]:rotate-180">
+                <span >{service.title}</span>
+                <ChevronDownIcon
+                  className="h-4 w-4 shrink-0 transition-transform duration-200 "
+                  aria-hidden
+                />
+              </Accordion.Trigger>
+            </Accordion.Header>
+            <Accordion.Content className="AccordionContent overflow-hidden text-base transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down ">
+              <p className='my-5'>           
+                   {service.description}
+              </p>            </Accordion.Content>
+          </Accordion.Item>
+
+        </Accordion.Root>
+      ))}
+
+      <div className='text-center my-10'>
+        <Button name='view Details' url='/services' />
+
       </div>
+    </Container>
   )
 }
 

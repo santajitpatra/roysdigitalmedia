@@ -2,30 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 229, 231, 235;
-  --background-end-rgb: 255, 255, 255;
-  --background-primary: 251, 206, 177;
 
+
+/* AccordionContent */
+
+
+.AccordionContent {
+  overflow: hidden;
+}
+.AccordionContent[data-state='open'] {
+  animation: slideDown 300ms ease-out;
+}
+.AccordionContent[data-state='closed'] {
+  animation: slideUp 300ms ease-out;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 0, 0, 0;
-    --background-start-rgb: 229, 231, 235;
-    --background-end-rgb: 255, 255, 255;
-      --background-primary: 251, 206, 177;
-
+@keyframes slideDown {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@keyframes slideUp {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
 }
