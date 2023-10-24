@@ -10,11 +10,7 @@ const TeamSection = () => {
     return (
         <div>
 
-
-
-
-
-            <Heading size={"8"} weight={"regular"} align={"center"} mt={"9"} className='py-10'>
+            <Heading size={"8"} weight={"regular"} align={"center"} mt={"9"} className='pb-10 md:pb-0'>
 
                 Meet The Dream Team
             </Heading>
@@ -62,7 +58,7 @@ const TeamSection = () => {
                                                     {e.name}
                                                 </h1>
 
-                                                <div className="flex-none w-full mt-2 text-sm font-medium text-gray-500">
+                                                <div className="flex-none w-full mt-2 text-sm font-semibold py-2 text-primary-dark_lh">
                                                     {e.title}
                                                 </div>
                                             </div>

@@ -1,4 +1,4 @@
-export const careers = [
+export const AllServicesDB = [
   {
     id: "01",
     title: "Content Creation",
@@ -65,4 +65,23 @@ export const careers = [
       "Decor Setup and Styling",
     ],
   },
+];
+
+
+export const places = [
+  "Houston, TX",
+  "Austin, TX",
+  "Dallas, TX",
+  "College Station, TX",
+  "Sealy, TX",
+  "Carmel, CA",
+  "Los Angeles, CA",
+  "Scottsdale, AZ",
+  "Miami, FL",
+  "Ft. Lauderdale, FL",
+  "Aspen, CO",
+  "Denver, CO",
+  "Boston, MA",
+  "Atlanta, GA",
+  "London, EN",
 ];
