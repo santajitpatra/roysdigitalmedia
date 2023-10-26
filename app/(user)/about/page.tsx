@@ -5,22 +5,19 @@ import React from "react";
 
 export default function About() {
   return (
-    <div>
-      <div className="bg-primary">
-        <AboutHeroSection />
-      </div>
+    <div className="bg-primary-light">
+      <AboutHeroSection />
+
       <TeamSection />
       <div className="flex flex-col items-center justify-center p-5 md:p-20 ">
-      
         <Image
           className="rounded-2xl bg-gradient-to-b bg-opacity-60 from-transparent to-black object-cover"
           src="/images/team_sofa.jpg"
           width={1200}
           height={1000}
-        
           alt="Picture of the author"
         />
-       
+
         <h2 className="text-xl md:text-3xl tracking-wider pt-20 text-primary-dark_l ">
           “Creativity is seeing what others see and thinking what no one else
           ever thought”.

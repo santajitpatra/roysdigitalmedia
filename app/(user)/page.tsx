@@ -8,7 +8,7 @@ export default function Home() {
   
 
   return (
-    <main>
+    <main className="bg-primary-light">
       <Jumbotron/>
       <HeroSection/>  
       <InstaBanner/>

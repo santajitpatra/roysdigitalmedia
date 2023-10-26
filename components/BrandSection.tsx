@@ -321,29 +321,62 @@ const brandName = [
 ]
 const BrandSection = () => {
     return (
-        <div className='bg-slate-200'>
-            <Marquee speed={200} direction={"right"}  gradient={true} gradientWidth={80} gradientColor={"#cbd5e1"} >
-                {brandName.map((brand, i) => (
-                    <div key={i} className='grid items-center' style={{
-                        backgroundPosition: "50%",
-                        width: "clamp(10rem, 1rem + 40vmin, 30rem)",
-                        padding: "calc(clamp(10rem, 1rem + 30vmin, 30rem) / 10)"
-                    }}>
-                        <Image src={brand.brandicon} width={400} height={200} alt="brand" className='object-contain rounded-lg aspect-video py-1 px-5  shadow-md bg-[#FBCEB1]' />
-                    </div>))}
-            </Marquee>
-            <Marquee speed={200} gradient={true} gradientWidth={80} gradientColor={"#cbd5e1"} >
-                {brandName.map((brand, i) => (
-                    <div key={i} className='grid items-center' style={{
-                        backgroundPosition: "50%",
-                        width: "clamp(10rem, 1rem + 40vmin, 30rem)",
-                        padding: "calc(clamp(10rem, 1rem + 30vmin, 30rem) / 10)"
-                    }}>
-                        <Image src={brand.brandicon} width={400} height={200} alt="brand" className='object-contain rounded-lg aspect-video py-1 px-5  shadow-md bg-[#FBCEB1]' />
-                    </div>))}
-            </Marquee>
-        </div>
-    )
+      <div className="px-16 py-20 bg-white">
+        <Marquee
+          speed={150}
+          direction={"right"}
+          gradient={true}
+          gradientWidth={80}
+          gradientColor={"#ffffff"}
+        >
+          {brandName.map((brand, i) => (
+            <div
+              key={i}
+              className="grid items-center"
+              style={{
+                backgroundPosition: "50%",
+                width: "clamp(10rem, 1rem + 40vmin, 30rem)",
+                padding: "calc(clamp(10rem, 1rem + 30vmin, 30rem) / 10)",
+              }}
+            >
+              <Image
+                src={brand.brandicon}
+                width={400}
+                height={200}
+                alt="brand"
+                className="object-contain rounded-lg aspect-video py-1 px-5  shadow-md bg-primary-light"
+              />
+            </div>
+          ))}
+        </Marquee>
+        <Marquee
+          speed={150}
+          gradient={true}
+          gradientWidth={80}
+          gradientColor={"#ffffff"}
+        >
+          {brandName.map((brand, i) => (
+            <div
+              key={i}
+              className="grid items-center"
+              style={{
+                backgroundPosition: "50%",
+                width: "clamp(10rem, 1rem + 40vmin, 30rem)",
+                padding: "calc(clamp(10rem, 1rem + 30vmin, 30rem) / 10)",
+              }}
+            >
+              <Image
+                src={brand.brandicon}
+                width={400}
+                height={200}
+                alt="brand"
+                className="object-contain rounded-lg aspect-video py-1 px-5  shadow-md bg-primary-light"
+              />
+            </div>
+          ))}
+        </Marquee>
+      </div>
+    );
 }
 
 export default BrandSection;

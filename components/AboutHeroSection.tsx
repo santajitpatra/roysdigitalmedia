@@ -3,7 +3,7 @@ import React from "react";
 const AboutHeroSection = () => {
     return (
        
-            <div className="px-6 py-20 text-center md:px-12 lg:text-left ">
+            <div className="px-6 py-20 text-center md:px-12 lg:text-left bg-primary">
                 <div className="w-100 mb-8 mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl">
                     <div className="lg:grid items-center flex flex-col-reverse lg:grid-cols-2">
                         <div className="mb-12 md:mt-12 lg:mt-0 lg:mb-0">
@@ -32,7 +32,7 @@ const AboutHeroSection = () => {
                         <div className="mb-10 md:mb-12 lg:mb-0">
                             <img
                                 src="/images/emma_about_hero.jpg"
-                                className="w-full rounded- rounded-t-full shadow-lg dark:shadow-black/20"
+                                className="w-full  rounded-t-full shadow-lg dark:shadow-black/20"
                                 alt=""
                             />
                         </div>

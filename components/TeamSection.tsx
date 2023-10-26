@@ -8,9 +8,9 @@ import { Heading } from '@radix-ui/themes'
 
 const TeamSection = () => {
     return (
-        <div>
+        <div >
 
-            <Heading size={"8"} weight={"regular"} align={"center"} mt={"9"} className='pb-10 md:pb-0'>
+            <Heading size={"8"} weight={"regular"} align={"center"}  className='pb-10 md:pb-0 pt-20'>
 
                 Meet The Dream Team
             </Heading>
