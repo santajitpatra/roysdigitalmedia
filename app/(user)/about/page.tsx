@@ -18,7 +18,7 @@ export default function About() {
           alt="Picture of the author"
         />
 
-        <h2 className="text-xl md:text-3xl tracking-wider pt-20 text-primary-dark_l ">
+        <h2 className="text-xl md:text-3xl pt-20 text-primary-dark_l ">
           “Creativity is seeing what others see and thinking what no one else
           ever thought”.
         </h2>

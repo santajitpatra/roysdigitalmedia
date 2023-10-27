@@ -18,12 +18,12 @@ const AllServices = () => {
             </div>
             <div className="md:w-1/2 md:ml-16">
               {srevice.category.map((categoryItem) => (
-                <p
+                <li
                   key={categoryItem}
                   className="text-base lg:text-lg pt-5  font-thin text-primary-dark_l"
                 >
-                  <span>&#9830;</span> {categoryItem}
-                </p>
+                  {categoryItem}
+                </li>
               ))}
             </div>
           </div>

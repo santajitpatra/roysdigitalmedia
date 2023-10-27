@@ -1,13 +1,18 @@
-export const careers = [
+export const jobrequirement = [
   {
+    id:"1",
     name: "Qualifications",
     category: [
       "Undergraduate degree (preferred but not limited to)",
-      "Ideal majors (preferred but not limited to)",
       "No prior experience required",
+      "Ideal majors (preferred but not limited to)",
+      {
+        preferred: ["Marketing Advertising", "Communications | PR", "Business"],
+      },
     ],
   },
   {
+    id:"2",
     name: "Positions",
     category: [
       "Social Media Analyst",
@@ -20,6 +25,7 @@ export const careers = [
     ],
   },
   {
+    id:"3",
     name: "Skill Set",
     category: [
       "Creative",

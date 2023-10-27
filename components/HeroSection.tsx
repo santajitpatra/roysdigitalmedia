@@ -8,7 +8,7 @@ const HeroSection = () => {
       <div className='flex m-auto py-16 justify-center md:mb-16'>
         <div className='flex md:flex-row flex-col-reverse'>
           <div className='md:w-1/2 px-10 lg:px-20'>
-            <h2 className='text-3xl md:text-4xl tracking-wider py-10'>The solution to your marketing 	&amp; media needs.</h2>
+            <h2 className='text-3xl md:text-4xl py-10'>The solution to your marketing 	&amp; media needs.</h2>
 
             <p className='text-sm lg:text-lg pb-5 font-thin'>In an increasingly digital era, a business&apos;s online presence is now an essential tool for reaching the world around them. At Roys Digital Media, we excel in elevating brands through effective digital marketing, empowering business owners to focus on their passion without concerns about their online image.
             </p>
