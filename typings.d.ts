@@ -1,6 +1,3 @@
-import { Image } from "sanity";
-import { Block } from "typescript";
-
 type Base = {
   _createdAt: string;
   _rev: string;
@@ -9,14 +6,15 @@ type Base = {
   _updatedAt: string;
 };
 
+
 interface Post extends Base {
+  author: Author;
   body: Block[];
-  title: string;
-  description: string;
+  categories: Category[];
   mainImage: Image;
   slug: Slug;
-  categories: Category[];
-  author: Author;
+  title: string;
+  description: string;
 }
 
 interface Author extends Base {
@@ -67,3 +65,5 @@ interface Title {
     _type: "string";
     current: string
 }
+
+

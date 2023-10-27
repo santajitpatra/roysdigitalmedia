@@ -1,8 +1,8 @@
 // 'use client';
 import '@radix-ui/themes/styles.css';
 import { Theme } from '@radix-ui/themes';
-import ProgressBar from "@badrap/bar-of-progress";
-import { Router } from "next/router";
+// import ProgressBar from "@badrap/bar-of-progress";
+// import { Router } from "next/router";
 
 // const progress = new ProgressBar({
 //   size: 8,
