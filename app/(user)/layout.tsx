@@ -4,6 +4,8 @@ import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
 import Footer from '@/components/Footer'
 import Providers from './providers'
+import NextTopLoader from "nextjs-toploader";
+
 
 const roboto = Roboto({
   weight: '400',
@@ -24,11 +26,16 @@ export default function RootLayout({
     <html lang="en">
       <body className={roboto.className}>
         <Providers>
+          <NextTopLoader
+            color="#fbceb1"
+            height={2}
+            showSpinner={false}
+          />
           <Navbar />
           {children}
           <Footer />
         </Providers>
       </body>
     </html>
-  )
+  );
 }
